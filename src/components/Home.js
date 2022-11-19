@@ -1,12 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
+import Welcome from './Welcome'
 import Projects from './Projects'
+import About from './About'
+import Contact from './Contact'
+import Art from './Art'
+
 // import styled from 'styled-components'
 
 function Home() {
   return (
-    <Container>
+<Container>
+    <Welcome />
     <Projects />
+    <About />
+    <Contact />
+    <Art />
 </Container>
   )
 }

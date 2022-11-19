@@ -4,10 +4,10 @@ import styled from 'styled-components'
 function Projects() {
   return (
     <Container>
-    <h2>MY PROJECTS</h2>
+    <h2>PROJECTS</h2>
     <Content>
         <Wrap>
-            <img src="/images/MovieNight.png" alt=""/>
+            <img src="/images/movie.png" alt=""/>
             <div>
             <h4>
                Languages: HTML / CSS / JavaScript
@@ -33,7 +33,7 @@ function Projects() {
             <h3>Springbot</h3>
         </Wrap>
         <Wrap>
-            <img src="/images/CodeQuiz.png" alt=""/>
+            <img src="/images/quiz.png" alt=""/>
             <div>
             <h4>
                Languages: HTML / CSS / JavaScript
@@ -79,6 +79,10 @@ const Container = styled.div`
         font-size: 40px;
         text-decoration: underline;
         color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        text-underline-offset: 8px;
      }
 `
 
