@@ -45,6 +45,18 @@ function Projects() {
             <h3>Quiz Game</h3>
         </Wrap>
         <Wrap>
+            <img src="/images/passGen.png" alt=""/>
+            <div>
+            <h4>
+               Languages: HTML / CSS / JavaScript
+               <br></br>
+               <br></br>
+               Easily generate a secure password with this app
+            </h4>
+            </div>
+            <h3>Password Generator</h3>
+        </Wrap>
+        <Wrap>
             <img src="/images/placeholder.jpg" alt=""/>
             <div>
             <h4>
