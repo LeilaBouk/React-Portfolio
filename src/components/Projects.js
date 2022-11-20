@@ -8,6 +8,7 @@ function Projects() {
     <Content>
         <Wrap>
             <img src="/images/movie.png" alt=""/>
+            <a href="https://jesus-orduno.github.io/movie-night-mania/" target="blank">
             <div>
             <h4>
                Languages: HTML / CSS / JavaScript
@@ -19,8 +20,10 @@ function Projects() {
             </h4>
             </div>
             <h3>Movie Night Mania</h3>
+            </a>
         </Wrap>
         <Wrap>
+        <a href="https://springbot-game.herokuapp.com/" target="blank">
             <img src="/images/springbot.png" alt=""/>
             <div>
             <h4>
@@ -31,8 +34,10 @@ function Projects() {
             </h4>
             </div>
             <h3>Springbot</h3>
+        </a>
         </Wrap>
         <Wrap>
+        <a href="https://leilabouk.github.io/M4-CodeQuiz/" target="blank">
             <img src="/images/quiz.png" alt=""/>
             <div>
             <h4>
@@ -43,8 +48,10 @@ function Projects() {
             </h4>
             </div>
             <h3>Quiz Game</h3>
+        </a>
         </Wrap>
         <Wrap>
+        <a href="https://leilabouk.github.io/M3-PasswordGenerator/" target="blank">
             <img src="/images/passGen.png" alt=""/>
             <div>
             <h4>
@@ -55,6 +62,7 @@ function Projects() {
             </h4>
             </div>
             <h3>Password Generator</h3>
+        </a>
         </Wrap>
         <Wrap>
             <img src="/images/placeholder.jpg" alt=""/>
@@ -74,6 +82,7 @@ export default Projects
 
 const Container = styled.div`
      background: #273748;
+     padding: 0 calc(3.5vw + 5px);
 
      h2 {
         font-size: 40px;
@@ -129,6 +138,15 @@ transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
         padding: 4px;
         font-size: 30px;
     }
+
+    a {
+        text-decoration: none; 
+    }
+
+    a:visited { 
+        text-decoration: none;
+        color: black; 
+       }
 
     div {
         width: 100%;

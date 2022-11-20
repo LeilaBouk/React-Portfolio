@@ -26,9 +26,9 @@ const Container = styled.main`
 
 // SO the nav is 70px. Therefore the main is 100% of the view height - those 70px :)
 min-height: calc(100vh - 70px);
-padding: 0 calc(3.5vw + 5px);
+// padding: 0 calc(3.5vw + 5px);
 position: relative;
-// overflow-x: hidden;
+overflow-x: hidden;
 background: #273748;
 
 &:before {
