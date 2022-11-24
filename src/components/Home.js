@@ -4,7 +4,7 @@ import Welcome from './Welcome'
 import Projects from './Projects'
 import About from './About'
 import Contact from './Contact'
-import Art from './Art'
+import Footer from './Footer'
 
 // import styled from 'styled-components'
 
@@ -15,7 +15,7 @@ function Home() {
     <Projects />
     <About />
     <Contact />
-    <Art />
+    <Footer />
 </Container>
   )
 }

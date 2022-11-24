@@ -1,6 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, Suspense } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components'
+
+import Sphere from './AnimatedSphere';
+import { Canvas } from '@react-three/fiber';
+import { OrbitControls, PresentationControls } from '@react-three/drei';
 
 function Contact() {
 
@@ -30,12 +34,35 @@ function Contact() {
       <textarea name="message" />
       <input type="submit" value="Send" />
     </form>
+    {/* <img src="/images/pfp.gif" alt=""/> */}
+    <Wrapper>
+    <Canvas>
+            <OrbitControls enableZoom={false}/>
+            <ambientLight intensity={0.5}/>
+            <directionalLight position={[-2, 5, 2]} intensity={4} color="#e3a1ff"/>
+            <Suspense fallback={null}>
+            <Sphere/>
+            </Suspense>
+        </Canvas>
+        </Wrapper>
     </ContactForm>
     </Container>
   )
 }
 
 export default Contact
+
+const Wrapper = styled.div`
+    position: relative;
+    // background: #332340;
+    height: 500px;
+    width: 500px;
+    padding-left: 180px;
+
+    canvas {
+        z-index: -1;
+    }
+`
 
 const Container = styled.div`
   padding-top: 10vw;
@@ -48,17 +75,22 @@ const Container = styled.div`
     letter-spacing: 1px;
     word-spacing: 4px;
     text-underline-offset: 8px;
+    margin-bottom: 10vh;
  }
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
     
 `
 
 const ContactForm = styled.div`
+
+display: flex;
+flex-direction: row;
+align-items: center;
+
+img {
+  width: 40%;
+  padding-left: 60px;
+}
+
 form {
   display: flex;
   // align-items: flex-start;

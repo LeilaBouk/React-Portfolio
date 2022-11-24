@@ -9,7 +9,7 @@ function AnimatedSphere() {
             color="red" 
             attatch="material" 
             distort={0.5} 
-            speed={10}
+            speed={3}
             roughness={1}
         />
     </Sphere>
