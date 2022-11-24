@@ -5,7 +5,15 @@ function About() {
   return (
     <Container>
          <h2>ABOUT</h2>
-        <img src="/images/quiz.png" alt=""/>
+         <Wrap>
+        <img src="/images/pfp.gif" alt=""/>
+        <p>
+        Leila Boukella is an Algerian-American illustrator based in Phoenix, Arizona. She graduated with a BFA in illustration from the School of Visual Arts in New York. 
+She specializes in creating appealing characters and artwork that can attract audiences of all ages.
+Online she goes by the name Lariatel, and runs an Instagram account called "Lariatel Explorers" which focuses on 6 original characters.
+She can be contacted at Lariatel.art@gmail.com for any art related inquiries.
+        </p>
+        </Wrap>
     </Container>
   )
 }
@@ -13,12 +21,14 @@ function About() {
 export default About
 
 const Container = styled.div`
-  margin-top: 20vw;
-  background: red;
-  background-image: url("https://assets.pokemon.com//assets/cms2/img/misc/virtual-backgrounds/masters/forest.jpg");
+  margin-top: 10vw;
+  // background: red;
+  background-image: url("/images/roses.png");
   background-size: cover;
 
   h2 {
+    padding-top: 15vw;
+    margin-bottom: 70px;
     font-size: 40px;
     text-decoration: underline;
     color: white;
@@ -28,9 +38,26 @@ const Container = styled.div`
     text-underline-offset: 8px;
  }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+`
+
+const Wrap = styled.div`
+
+display: flex;
+padding-bottom: 80px;
+
+img {
+  width: 30%;
+  height: 30%;
+  margin: 10px 0px 10px 100px;
+  border-radius: 3px;
+}
+
+p {
+  margin: 10px 100px 10px 100px;
+  font-size: 20px;
+  background: white;
+  color: #273748;
+  padding: 20px;
+  border-radius: 3px;
+}
 `
