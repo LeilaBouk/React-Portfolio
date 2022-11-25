@@ -65,7 +65,9 @@ const Wrapper = styled.div`
 `
 
 const Container = styled.div`
-  padding-top: 10vw;
+  padding-top: 7vw;
+  padding-bottom: 4vw;
+  background: #332340;
 
   h2 {
     font-size: 40px;

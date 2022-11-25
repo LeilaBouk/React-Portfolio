@@ -5,12 +5,14 @@ import Projects from './Projects'
 import About from './About'
 import Contact from './Contact'
 import Footer from './Footer'
+import Header from './Header'
 
 // import styled from 'styled-components'
 
 function Home() {
   return (
 <Container>
+    <Header />
     <Welcome />
     <Projects />
     <About />
@@ -24,12 +26,13 @@ export default Home
 
 const Container = styled.main`
 
-// SO the nav is 70px. Therefore the main is 100% of the view height - those 70px :)
-min-height: calc(100vh - 70px);
-// padding: 0 calc(3.5vw + 5px);
+height: 100vh;
 position: relative;
 overflow-x: hidden;
-background: #273748;
+overflow-y: auto;
+// background: #273748;
+background: black;
+perspective: 10px;
 
 &:before {
   no-repeat fixed;

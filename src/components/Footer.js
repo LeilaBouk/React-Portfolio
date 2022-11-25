@@ -4,8 +4,10 @@ import styled from 'styled-components'
 function Footer() {
   return (
     <Container>
-    <h2>FOOTER</h2>
-   {/* <img src="/images/quiz.png" alt=""/> */}
+    {/* <h2>FOOTER</h2> */}
+   <img src="/images/linkedin.png" alt=""/>
+   <img src="/images/github.png" alt=""/>
+   <img src="/images/insta.png" alt=""/>
 </Container>
   )
 }
@@ -13,8 +15,13 @@ function Footer() {
 export default Footer
 
 const Container = styled.div`
-  margin-top: 10vw;
-  background: red;
+  background: #283447;
+  padding: 50px;
+
+  img {
+    max-width: 70px;
+    padding: 20px;
+  }
 
   h2 {
     font-size: 40px;

@@ -21,7 +21,7 @@ She can be contacted at Lariatel.art@gmail.com for any art related inquiries.
 export default About
 
 const Container = styled.div`
-  margin-top: 10vw;
+  // margin-top: 10vw;
   // background: red;
   background-image: url("/images/roses.png");
   background-size: cover;

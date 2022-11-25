@@ -83,6 +83,8 @@ export default Projects
 const Container = styled.div`
      background: #273748;
      padding: 0 calc(3.5vw + 5px);
+     padding-top: 2vw;
+     padding-bottom: 13vw;
 
      h2 {
         font-size: 40px;
