@@ -6,6 +6,7 @@ import About from './About'
 import Contact from './Contact'
 import Footer from './Footer'
 import Header from './Header'
+import { Palette } from './Colors'
 
 // import styled from 'styled-components'
 
@@ -30,8 +31,7 @@ height: 100vh;
 position: relative;
 overflow-x: hidden;
 overflow-y: auto;
-// background: #273748;
-background: black;
+background: ${Palette.dark};
 perspective: 10px;
 
 &:before {

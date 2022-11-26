@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Palette } from './Colors'
 
 function Welcome() {
   return (
@@ -20,7 +21,7 @@ const Container = styled.div`
 // background-image: url("/images/spacetest.jpg");
 background-size:auto 100%;
 height: 700px;
-border:100px solid #273748;
+border:100px solid ${Palette.sky};
 display: flex;
 position: relative;
 align-items: center;

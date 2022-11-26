@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Sphere from './AnimatedSphere';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PresentationControls } from '@react-three/drei';
+import { Palette } from './Colors'
 
 function Contact() {
 
@@ -67,7 +68,7 @@ const Wrapper = styled.div`
 const Container = styled.div`
   padding-top: 7vw;
   padding-bottom: 4vw;
-  background: #332340;
+  background: ${Palette.water};
 
   h2 {
     font-size: 40px;
@@ -139,7 +140,7 @@ form {
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: bold;
-    background: #7b91ab;
+    background: ${Palette.red};
     color: white;
     border: none;
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
@@ -147,6 +148,6 @@ form {
     &:hover {
       transform: scale(1.05);
       border-color: rgba(249, 249, 249, 0.8);
-      background: #903939;
+      background: ${Palette.dark};
     }
   }`

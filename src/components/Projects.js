@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Palette } from './Colors'
 
 function Projects() {
   return (
@@ -81,7 +82,8 @@ function Projects() {
 export default Projects
 
 const Container = styled.div`
-     background: #273748;
+     background: ${Palette.sky};
+    background-image: url("/images/skybox.png");
      padding: 0 calc(3.5vw + 5px);
      padding-top: 2vw;
      padding-bottom: 13vw;
@@ -134,10 +136,11 @@ transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
     h3 {
         border-radius: 3px;
         border: 3px solid rgba(249, 249, 249, 0.1);
-        background: #7b91ab;
+        background: ${Palette.red};
         box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
         rgb(0 0 0 / 73%) 0px 16px 10px -10px;
         padding: 4px;
+        color: white;
         font-size: 30px;
     }
 
@@ -147,7 +150,7 @@ transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
     a:visited { 
         text-decoration: none;
-        color: black; 
+        color: white; 
        }
 
     div {
@@ -178,7 +181,7 @@ transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
         cursor: pointer;
 
         h3 {
-            background: #903939;
+            background: ${Palette.dark};
             color: white;
         }
 

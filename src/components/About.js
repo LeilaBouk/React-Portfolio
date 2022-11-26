@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Palette } from './Colors'
 
 function About() {
   return (
@@ -22,7 +23,7 @@ export default About
 
 const Container = styled.div`
   // margin-top: 10vw;
-  // background: red;
+  background: ${Palette.skyfade};
   background-image: url("/images/roses.png");
   background-size: cover;
 

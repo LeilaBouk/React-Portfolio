@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Palette } from './Colors'
 
 function Header() {
   return (
     <Nav>
 
-<Icon src="https://c.tenor.com/TYWdCAZu258AAAAC/guardians-of-the-galaxy-rocket-raccoon.gif"/>
+{/* <Icon src="https://c.tenor.com/TYWdCAZu258AAAAC/guardians-of-the-galaxy-rocket-raccoon.gif"/> */}
 
         <NavMenu>
         <a>
@@ -38,7 +39,7 @@ export default Header
 
 const Nav = styled.nav`
 height: 70px;
-background: #090b13;
+background: ${Palette.dark};
 display: flex;
 align-items: center;
 padding: 0 36px;
@@ -74,7 +75,7 @@ const NavMenu = styled.div`
             &:after {
                 content: "";
                 height: 2px;
-                background: white;
+                background: ${Palette.red};
                 position: absolute;
                 left: 0;
                 right: 0;
@@ -83,13 +84,16 @@ const NavMenu = styled.div`
                 transform-origin: center;
                 transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
                 transform: scaleX(0);
+                color: ${Palette.red};
             }
         }
 
         &:hover {
+            color: ${Palette.red};
             span:after {
                 transform: scaleX(1);
                 opacity: 1;
+                color: ${Palette.red};
             }
         }
     }

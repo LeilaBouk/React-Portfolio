@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Palette } from './Colors'
 
 function Footer() {
   return (
@@ -15,7 +16,7 @@ function Footer() {
 export default Footer
 
 const Container = styled.div`
-  background: #283447;
+  background: ${Palette.dark};
   padding: 50px;
 
   img {
