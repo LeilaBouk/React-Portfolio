@@ -11,10 +11,10 @@ function Welcome() {
       <img src="/images/stars1.png" alt="" className="e"/>
     <img src="/images/planets1.png" alt="" className="d"/>
     <img src="/images/planets2.png" alt="" className="c"/>
-    <img src="/images/planets3.gif" alt="" className="b"/>
-    <img src="/images/planets4.gif" alt="" className="a"/>
+    <img src="/images/planets3.png" alt="" className="b"/>
+    <img src="/images/planets4.png" alt="" className="a"/>
     {/* <img src="/images/spacetest.jpg" alt="" className="e"/> */}
-    <h1>Welcome</h1>
+    <h1>Leila Boukella | Front-End Dev</h1>
     </Container>
   )
 }

@@ -23,7 +23,7 @@ function Contact() {
   };
 
   return (
-    <Container>
+    <Container id="contact">
          <h2>CONTACT</h2>
     <ContactForm>
     <form ref={form} onSubmit={sendEmail}>

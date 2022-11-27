@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Palette } from './Colors'
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Header() {
   return (
@@ -9,24 +10,30 @@ function Header() {
 {/* <Icon src="https://c.tenor.com/TYWdCAZu258AAAAC/guardians-of-the-galaxy-rocket-raccoon.gif"/> */}
 
         <NavMenu>
-        <a>
+        <Link to="#projects">
             {/* <img src='/images/project-icon.png' alt='projects'/> */}
             <span>PROJECTS</span>
-        </a>
+        </Link>
 
-        <a>
+        <Link to="#about">
             {/* <img src='/images/about-icon.png' alt='about'/> */}
             <span>ABOUT</span>
-        </a>
+        </Link>
 
-        <a>
+        <Link to="#contact">
             {/* <img src='/images/contact-icon.png alt='contact'/> */}
             <span>CONTACT</span>
-        </a>
+        </Link>
 
         <a>
             {/* <img src='/images/resume-icon.png' alt='resume'/> */}
             <span>RESUME</span>
+        </a>
+
+
+        <a href="https://lariatel.com/work" target="blank">
+            {/* <img src='/images/resume-icon.png' alt='resume'/> */}
+            <span>ART</span>
         </a>
 
         </NavMenu>
@@ -54,12 +61,19 @@ const NavMenu = styled.div`
     margin-left: 25px;
     align-items: center;
 
+    a:visited { 
+        text-decoration: none;
+        color: white; 
+       }
+    
+
     a {
         display: flex;
         align-items: center;
         padding: 0 12px;
         cursor: pointer;
         color: white;
+        text-decoration: none; 
 
         img {
             height: 20px;

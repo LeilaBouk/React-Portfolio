@@ -4,7 +4,7 @@ import { Palette } from './Colors'
 
 function About() {
   return (
-    <Container>
+    <Container id="about">
          <h2>ABOUT</h2>
          <Wrap>
         <img src="/images/pfp.gif" alt=""/>

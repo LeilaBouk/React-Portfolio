@@ -4,7 +4,7 @@ import { Palette } from './Colors'
 
 function Projects() {
   return (
-    <Container>
+    <Container  id="projects">
     <h2>PROJECTS</h2>
     <Content>
         <Wrap>
