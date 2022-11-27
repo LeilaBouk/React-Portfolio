@@ -5,10 +5,14 @@ import { Palette } from './Colors'
 function Welcome() {
   return (
     <Container>
-    <img src="/images/planetst1.png" alt="" className="d"/>
-    <img src="/images/planetst2.png" alt="" className="c"/>
-    <img src="/images/planetst3.png" alt="" className="b"/>
-    <img src="/images/planetst4.png" alt="" className="a"/>
+      <img src="/images/space2.png" alt="" className="h"/>
+      <img src="/images/space1.png" alt="" className="g"/>
+      <img src="/images/stars2.png" alt="" className="f"/>
+      <img src="/images/stars1.png" alt="" className="e"/>
+    <img src="/images/planets1.png" alt="" className="d"/>
+    <img src="/images/planets2.png" alt="" className="c"/>
+    <img src="/images/planets3.gif" alt="" className="b"/>
+    <img src="/images/planets4.gif" alt="" className="a"/>
     {/* <img src="/images/spacetest.jpg" alt="" className="e"/> */}
     <h1>Welcome</h1>
     </Container>
@@ -52,6 +56,22 @@ img {
 
 .d {
   transform: translateZ(-3px);
+}
+
+.e {
+  transform: translateZ(-5px) scale(1);
+}
+
+.f {
+  transform: translateZ(-10px) scale(2);
+}
+
+.g {
+  transform: translateZ(-5px) scale(2);
+}
+
+.h {
+  transform: translateZ(-10px) scale(2);
 }
 
 h1 {

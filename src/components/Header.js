@@ -89,7 +89,7 @@ const NavMenu = styled.div`
         }
 
         &:hover {
-            color: ${Palette.red};
+            color: white;
             span:after {
                 transform: scaleX(1);
                 opacity: 1;
