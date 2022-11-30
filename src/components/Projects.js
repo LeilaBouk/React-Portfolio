@@ -83,7 +83,8 @@ export default Projects
 
 const Container = styled.div`
      background: ${Palette.sky};
-    background-image: url("/images/skybox.png");
+     background-image: url("/images/skybox.png");
+     background-size: cover;
      padding: 0 calc(3.5vw + 5px);
      padding-top: 2vw;
      padding-bottom: 13vw;

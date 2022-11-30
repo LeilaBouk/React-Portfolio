@@ -23,6 +23,7 @@ export default About
 
 const Container = styled.div`
   // margin-top: 10vw;
+  margin-top: -35px;
   background: ${Palette.skyfade};
   background-image: url("/images/roses.png");
   background-size: cover;
