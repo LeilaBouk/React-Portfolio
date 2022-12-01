@@ -8,13 +8,14 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  HashRouter,
   // Link
 } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         {/* <Header /> */}
         <Routes>
 
@@ -24,7 +25,7 @@ function App() {
 
         </Routes>
 
-      </Router>
+      </HashRouter>
     </div>
   );
 }
