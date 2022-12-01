@@ -9,10 +9,16 @@ function About() {
          <Wrap>
         <img src="/images/pfp.gif" alt=""/>
         <p>
-        Leila Boukella is an Algerian-American illustrator based in Phoenix, Arizona. She graduated with a BFA in illustration from the School of Visual Arts in New York. 
-She specializes in creating appealing characters and artwork that can attract audiences of all ages.
-Online she goes by the name Lariatel, and runs an Instagram account called "Lariatel Explorers" which focuses on 6 original characters.
-She can be contacted at Lariatel.art@gmail.com for any art related inquiries.
+        Hi! I'm Leila, a front-end developer and artist based in Arizona.
+        <br></br>
+        <br></br>
+        I grew up in the United Arab Emirates before moving to the United States.
+        <br></br>
+        <br></br>
+        I went to college in New York at the School of Visual Arts.
+        <br></br>
+        <br></br>
+        HTML | CSS | JS | React
         </p>
         </Wrap>
     </Container>

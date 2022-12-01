@@ -6,9 +6,13 @@ function Footer() {
   return (
     <Container>
     {/* <h2>FOOTER</h2> */}
+    <a href="https://www.linkedin.com/in/leila-boukella-7b2742226/" target="blank">
    <img src="/images/linkedin.png" alt=""/>
+   </a>
+   <a href="https://github.com/LeilaBouk" target="blank">
    <img src="/images/github.png" alt=""/>
-   <img src="/images/insta.png" alt=""/>
+   </a>
+   {/* <img src="/images/insta.png" alt=""/> */}
 </Container>
   )
 }

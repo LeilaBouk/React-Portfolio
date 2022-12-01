@@ -66,6 +66,20 @@ function Projects() {
         </a>
         </Wrap>
         <Wrap>
+            <img src="/images/demo.png" alt=""/>
+            <a href="https://github.com/LeilaBouk/M14-TechBlog" target="blank">
+            <div>
+            <h4>
+               Languages: Handlebars / SCSS / JavaScript
+               <br></br>
+               <br></br>
+               Bistro Board is a place for chefs to gather and share thoughts on the food industry.
+            </h4>
+            </div>
+            <h3>Bistro Board</h3>
+            </a>
+        </Wrap>
+        <Wrap>
             <img src="/images/placeholder.jpg" alt=""/>
             <div>
             <h4>
