@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Resume from './components/Resume';
 
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Routes,
   Route,
   HashRouter,
@@ -15,7 +15,7 @@ import {
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <HashRouter base='/'>
         {/* <Header /> */}
         <Routes>
 
