@@ -12,7 +12,7 @@ function Footer() {
    <a href="https://github.com/LeilaBouk" target="blank">
    <img src="./images/github.png" alt=""/>
    </a>
-   {/* <img src="/images/insta.png" alt=""/> */}
+   {/* <img src="./images/insta.png" alt=""/> */}
 </Container>
   )
 }

@@ -7,7 +7,7 @@ function About() {
     <Container id="about">
          <h2>ABOUT</h2>
          <Wrap>
-        <img src="/images/pfp.gif" alt=""/>
+        <img src="./images/pfp.gif" alt=""/>
         <p>
         Hi! I'm Leila, a front-end developer and artist based in Arizona.
         <br></br>
@@ -31,7 +31,7 @@ const Container = styled.div`
   // margin-top: 10vw;
   margin-top: -35px;
   background: ${Palette.skyfade};
-  background-image: url("/images/roses.png");
+  background-image: url("./images/roses.png");
   background-size: cover;
 
   h2 {

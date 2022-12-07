@@ -8,7 +8,7 @@ function Projects() {
     <h2>PROJECTS</h2>
     <Content>
         <Wrap>
-            <img src="/images/movie.png" alt=""/>
+            <img src="./images/movie.png" alt=""/>
             <a href="https://jesus-orduno.github.io/movie-night-mania/" target="blank">
             <div>
             <h4>
@@ -25,7 +25,7 @@ function Projects() {
         </Wrap>
         <Wrap>
         <a href="https://springbot-game.herokuapp.com/" target="blank">
-            <img src="/images/springbot.png" alt=""/>
+            <img src="./images/springbot.png" alt=""/>
             <div>
             <h4>
                Languages: Handlebars / SCSS / JavaScript
@@ -39,7 +39,7 @@ function Projects() {
         </Wrap>
         <Wrap>
         <a href="https://leilabouk.github.io/M4-CodeQuiz/" target="blank">
-            <img src="/images/quiz.png" alt=""/>
+            <img src="./images/quiz.png" alt=""/>
             <div>
             <h4>
                Languages: HTML / CSS / JavaScript
@@ -53,7 +53,7 @@ function Projects() {
         </Wrap>
         <Wrap>
         <a href="https://leilabouk.github.io/M3-PasswordGenerator/" target="blank">
-            <img src="/images/passGen.png" alt=""/>
+            <img src="./images/passGen.png" alt=""/>
             <div>
             <h4>
                Languages: HTML / CSS / JavaScript
@@ -66,7 +66,7 @@ function Projects() {
         </a>
         </Wrap>
         <Wrap>
-            <img src="/images/demo.png" alt=""/>
+            <img src="./images/demo.png" alt=""/>
             <a href="https://github.com/LeilaBouk/M14-TechBlog" target="blank">
             <div>
             <h4>
@@ -80,7 +80,7 @@ function Projects() {
             </a>
         </Wrap>
         <Wrap>
-            <img src="/images/placeholder.jpg" alt=""/>
+            <img src="./images/placeholder.jpg" alt=""/>
             <div>
             <h4>
                Page unavailable
@@ -97,7 +97,7 @@ export default Projects
 
 const Container = styled.div`
      background: ${Palette.sky};
-     background-image: url("/images/skybox.png");
+     background-image: url("./images/skybox.png");
      background-size: cover;
      padding: 0 calc(3.5vw + 5px);
      padding-top: 2vw;

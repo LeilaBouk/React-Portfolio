@@ -5,7 +5,7 @@ function Art() {
   return (
     <Container>
          <h2>ART</h2>
-        <img src="/images/quiz.png" alt=""/>
+        <img src="./images/quiz.png" alt=""/>
     </Container>
   )
 }

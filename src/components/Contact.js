@@ -35,7 +35,7 @@ function Contact() {
       <textarea name="message" />
       <input type="submit" value="Send" />
     </form>
-    {/* <img src="/images/pfp.gif" alt=""/> */}
+    {/* <img src="./images/pfp.gif" alt=""/> */}
     <Wrapper>
     <Canvas>
             <OrbitControls enableZoom={false}/>

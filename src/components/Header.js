@@ -11,28 +11,28 @@ function Header() {
 
         <NavMenu>
         <Link to="#projects">
-            {/* <img src='/images/project-icon.png' alt='projects'/> */}
+            {/* <img src='./images/project-icon.png' alt='projects'/> */}
             <span>PROJECTS</span>
         </Link>
 
         <Link to="#about">
-            {/* <img src='/images/about-icon.png' alt='about'/> */}
+            {/* <img src='./images/about-icon.png' alt='about'/> */}
             <span>ABOUT</span>
         </Link>
 
         <Link to="#contact">
-            {/* <img src='/images/contact-icon.png alt='contact'/> */}
+            {/* <img src='./images/contact-icon.png alt='contact'/> */}
             <span>CONTACT</span>
         </Link>
 
         <a>
-            {/* <img src='/images/resume-icon.png' alt='resume'/> */}
+            {/* <img src='./images/resume-icon.png' alt='resume'/> */}
             <span>RESUME</span>
         </a>
 
 
         <a href="https://lariatel.com/work" target="blank">
-            {/* <img src='/images/resume-icon.png' alt='resume'/> */}
+            {/* <img src='./images/resume-icon.png' alt='resume'/> */}
             <span>ART</span>
         </a>
 
