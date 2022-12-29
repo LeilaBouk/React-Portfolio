@@ -13,8 +13,9 @@ function Projects() {
             <a href="https://jesus-orduno.github.io/movie-night-mania/" target="blank">
                 <h4>View Project</h4>
                 </a>
-
+                <a href="https://github.com/jesus-orduno/movie-night-mania" target="blank">
                 <h4>View Repository</h4>
+                </a>
                 <h5>
                Languages: HTML / CSS / JavaScript
                  </h5>
@@ -38,30 +39,34 @@ function Projects() {
             <h3>Shop-Shop</h3>
         </Wrap>
         <Wrap>
-        <a href="https://leilabouk.github.io/M4-CodeQuiz/" target="blank">
             <img src="./images/quiz.png" alt=""/>
             <div>
+            <a href="https://leilabouk.github.io/M4-CodeQuiz/" target="blank">
             <h4>View Project</h4>
+            </a>
+            <a href="https://github.com/LeilaBouk/M4-CodeQuiz" target="blank">
             <h4>View Repository</h4>
+            </a>
             <h5>
                Languages: HTML / CSS / JavaScript
             </h5>
             </div>
             <h3>Quiz Game</h3>
-        </a>
         </Wrap>
         <Wrap>
-        <a href="https://leilabouk.github.io/M3-PasswordGenerator/" target="blank">
             <img src="./images/passGen.png" alt=""/>
             <div>
+            <a href="https://leilabouk.github.io/M3-PasswordGenerator/" target="blank">
             <h4>View Project</h4>
+            </a>
+            <a href="https://github.com/LeilaBouk/M3-PasswordGenerator" target="blank">
             <h4>View Repository</h4>
+            </a>
             <h5>
                Languages: HTML / CSS / JavaScript
             </h5>
             </div>
             <h3>Password Generator</h3>
-        </a>
         </Wrap>
         <Wrap>
             <img src="./images/demo.png" alt=""/>
@@ -77,17 +82,20 @@ function Projects() {
             </a>
         </Wrap>
         <Wrap>
-        <a href="https://springbot-game.herokuapp.com/" target="blank">
+
             <img src="./images/springbot.png" alt=""/>
             <div>
+            <a href="https://leilabouk.github.io/SBGameDemo/" target="blank">
             <h4>View Project</h4>
+            </a>
+            <a href="https://github.com/LeilaBouk/SBGameDemo" target="blank">
             <h4>View Repository</h4>
+            </a>
             <h5>
                Languages: Handlebars / SCSS / JavaScript
             </h5>
             </div>
             <h3>Springbot</h3>
-        </a>
         </Wrap>
     </Content>
 </Container>
@@ -132,13 +140,16 @@ const Content = styled.div`
 const Wrap = styled.div`
 
 border-radius: 3px;
-cursor: pointer;
+// cursor: pointer;
 position: relative;
 // overflow: hidden;
 border: 3px solid rgba(249, 249, 249, 0.1);
 box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+max-height:330px;
+height:auto;
+width:auto;
 
     img {
         width: 100%;
@@ -150,12 +161,13 @@ transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
     }
 
     h3 {
+        margin: 0;
         border-radius: 3px;
         border: 3px solid rgba(249, 249, 249, 0.1);
-        background: ${Palette.red};
+        background: ${Palette.dark};
         box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
         rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-        padding: 4px;
+        padding: 10px;
         color: white;
         font-size: 30px;
     }
@@ -212,7 +224,7 @@ transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
         border-color: rgba(249, 249, 249, 0.8);
         box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
         rgb(0 0 0 / 72%) 0px 30px 22px -10px;
-        cursor: pointer;
+        // cursor: pointer;
 
         h3 {
             background: ${Palette.dark};

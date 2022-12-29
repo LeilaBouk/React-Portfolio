@@ -85,6 +85,7 @@ const NavMenu = styled.div`
             position: relative;
             font-size: 20px;
             font-weight: bold;
+            transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
             &:after {
                 content: "";
@@ -103,7 +104,7 @@ const NavMenu = styled.div`
         }
 
         &:hover {
-            color: white;
+            color: ${Palette.skyfade};
             span:after {
                 transform: scaleX(1);
                 opacity: 1;
