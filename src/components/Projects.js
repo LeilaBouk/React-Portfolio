@@ -20,7 +20,9 @@ function Projects() {
                Languages: HTML / CSS / JavaScript
                  </h5>
             </div>
+            <a href="https://jesus-orduno.github.io/movie-night-mania/" target="blank">
             <h3>Movie Night Mania</h3>
+            </a>
         </Wrap>
         <Wrap>
 
@@ -36,7 +38,9 @@ function Projects() {
                Languages: Handlebars / SCSS / JavaScript
             </h5>
             </div>
+            <a href="https://mysterious-brushlands-70155.herokuapp.com/" target="blank">
             <h3>Shop-Shop</h3>
+            </a>
         </Wrap>
         <Wrap>
             <img src="./images/quiz.png" alt=""/>
@@ -51,7 +55,9 @@ function Projects() {
                Languages: HTML / CSS / JavaScript
             </h5>
             </div>
+            <a href="https://leilabouk.github.io/M4-CodeQuiz/" target="blank">
             <h3>Quiz Game</h3>
+            </a>
         </Wrap>
         <Wrap>
             <img src="./images/passGen.png" alt=""/>
@@ -66,7 +72,9 @@ function Projects() {
                Languages: HTML / CSS / JavaScript
             </h5>
             </div>
+            <a href="https://leilabouk.github.io/M3-PasswordGenerator/" target="blank">
             <h3>Password Generator</h3>
+            </a>
         </Wrap>
         <Wrap>
             <img src="./images/demo.png" alt=""/>
@@ -95,7 +103,9 @@ function Projects() {
                Languages: Handlebars / SCSS / JavaScript
             </h5>
             </div>
+            <a href="https://leilabouk.github.io/SBGameDemo/" target="blank">
             <h3>Springbot</h3>
+            </a>
         </Wrap>
     </Content>
 </Container>
@@ -139,11 +149,9 @@ const Content = styled.div`
 
 const Wrap = styled.div`
 
-border-radius: 3px;
-// cursor: pointer;
+// border-radius: 3px;
 position: relative;
-// overflow: hidden;
-border: 3px solid rgba(249, 249, 249, 0.1);
+// border: 3px solid ${Palette.dark};
 box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
@@ -163,13 +171,14 @@ width:auto;
     h3 {
         margin: 0;
         border-radius: 3px;
-        border: 3px solid rgba(249, 249, 249, 0.1);
+        // border: 3px solid rgba(249, 249, 249, 0.1);
         background: ${Palette.dark};
         box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
         rgb(0 0 0 / 73%) 0px 16px 10px -10px;
         padding: 10px;
         color: white;
         font-size: 30px;
+        cursor: pointer;
     }
 
     a {
