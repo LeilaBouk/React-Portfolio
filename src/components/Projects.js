@@ -1,11 +1,41 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Palette } from './Colors'
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
+
+const exampleVariant = {
+    visible: { opacity: 1, scale: 1, y:0,  transition: { duration: 0.6 } },
+    hidden: { opacity: 0, scale: 0.9, y:20 },
+  }
+
 
 function Projects() {
+
+    // Scroll animation
+    const control = useAnimation()
+    const [ref, inView] = useInView()
+
+    useEffect(() => {
+        if (inView) {
+          control.start("visible");
+        } 
+        else {
+            control.start("hidden");
+          }
+      }, [control, inView]);
+
+    //   Component contents
   return (
+
     <Container  id="projects">
     <h2>PROJECTS</h2>
+    <motion.div
+   ref={ref}
+    variants={exampleVariant}
+    initial="hidden"
+    animate={control}>
     <Content>
         <Wrap>
             <img src="./images/movie.png" alt=""/>
@@ -108,15 +138,17 @@ function Projects() {
             </a>
         </Wrap>
     </Content>
+    </motion.div>
 </Container>
+
   )
 }
 
 export default Projects
 
 const Container = styled.div`
-     background: ${Palette.sky};
-     background-image: url("./images/skybox.png");
+    //  background: ${Palette.sky};
+    //  background-image: url("./images/skybox.png");
      background-size: cover;
      padding: 0 calc(3.5vw + 5px);
      padding-top: 2vw;
