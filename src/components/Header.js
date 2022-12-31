@@ -81,26 +81,28 @@ const NavMenu = styled.div`
 
         span {
             font-size: 13px;
-            letter-spacing: 1.42px;
+            letter-spacing: 1.50px;
             position: relative;
-            font-size: 20px;
+            font-size: 25px;
             font-weight: bold;
             transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
             &:after {
                 content: "";
-                height: 2px;
+                height: 3px;
                 background: ${Palette.red};
                 position: absolute;
                 left: 0;
                 right: 0;
                 bottom: -5px;
                 opacity: 0;
-                transform-origin: center;
+                transform-origin: left;
                 transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
                 transform: scaleX(0);
                 color: ${Palette.red};
             }
+
+
         }
 
         &:hover {

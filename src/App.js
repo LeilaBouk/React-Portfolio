@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 // import Header from './components/Header';
 import Home from './components/Home';
 import Resume from './components/Resume';
+import Loading from './components/Loading';
 
 import {
   // BrowserRouter as Router,
@@ -13,9 +14,27 @@ import {
 } from "react-router-dom";
 
 function App() {
+
+  // Loading Screen Logic
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500)
+  }, [])
+
   return (
     <div className="App">
-      <HashRouter base='/'>
+      {
+        loading ? 
+        
+        <Loading />
+
+        :
+
+        <HashRouter base='/'>
         {/* <Header /> */}
         <Routes>
 
@@ -26,6 +45,8 @@ function App() {
         </Routes>
 
       </HashRouter>
+
+      }
     </div>
   );
 }

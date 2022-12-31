@@ -5,8 +5,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const exampleVariant = {
-    visible: { opacity: 1, scale: 1, y:0,  transition: { duration: 0.6 } },
+const variant = {
+    visible: { opacity: 1, scale: 1, y:10,  transition: { duration: 0.6 } },
     hidden: { opacity: 0, scale: 0.9, y:20 },
   }
 
@@ -33,7 +33,7 @@ function Projects() {
     <h2>PROJECTS</h2>
     <motion.div
    ref={ref}
-    variants={exampleVariant}
+    variants={variant}
     initial="hidden"
     animate={control}>
     <Content>
@@ -47,7 +47,7 @@ function Projects() {
                 <h4>View Repository</h4>
                 </a>
                 <h5>
-               Languages: HTML / CSS / JavaScript
+                HTML / Materialize / JavaScript
                  </h5>
             </div>
             <a href="https://jesus-orduno.github.io/movie-night-mania/" target="blank">
@@ -65,7 +65,7 @@ function Projects() {
             <h4>View Repository</h4>
             </a>
             <h5>
-               Languages: Handlebars / SCSS / JavaScript
+               React / Styled Components / JavaScript
             </h5>
             </div>
             <a href="https://mysterious-brushlands-70155.herokuapp.com/" target="blank">
@@ -82,7 +82,7 @@ function Projects() {
             <h4>View Repository</h4>
             </a>
             <h5>
-               Languages: HTML / CSS / JavaScript
+                HTML / CSS / JavaScript
             </h5>
             </div>
             <a href="https://leilabouk.github.io/M4-CodeQuiz/" target="blank">
@@ -99,7 +99,7 @@ function Projects() {
             <h4>View Repository</h4>
             </a>
             <h5>
-               Languages: HTML / CSS / JavaScript
+                HTML / CSS / JavaScript
             </h5>
             </div>
             <a href="https://leilabouk.github.io/M3-PasswordGenerator/" target="blank">
@@ -113,7 +113,7 @@ function Projects() {
             <h4>View Project</h4>
             <h4>View Repository</h4>
             <h5>
-               Languages: Handlebars / SCSS / JavaScript
+                Handlebars / SCSS / JavaScript
             </h5>
             </div>
             <h3>Bistro Board</h3>
@@ -130,7 +130,7 @@ function Projects() {
             <h4>View Repository</h4>
             </a>
             <h5>
-               Languages: Handlebars / SCSS / JavaScript
+                Handlebars / SCSS / JavaScript
             </h5>
             </div>
             <a href="https://leilabouk.github.io/SBGameDemo/" target="blank">
@@ -152,16 +152,15 @@ const Container = styled.div`
      background-size: cover;
      padding: 0 calc(3.5vw + 5px);
      padding-top: 2vw;
-     padding-bottom: 13vw;
 
      h2 {
-        font-size: 40px;
+        font-size: 70px;
         text-decoration: underline;
         color: white;
         font-weight: bold;
         letter-spacing: 1px;
         word-spacing: 4px;
-        text-underline-offset: 8px;
+        text-underline-offset: 20px;
      }
 `
 

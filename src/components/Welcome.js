@@ -12,7 +12,7 @@ function Welcome() {
     <img src="./images/planets1.png" alt="" className="d"/>
     <img src="./images/planets2.png" alt="" className="c"/>
     <img src="./images/planets3.png" alt="" className="b"/>
-    <img src="./images/planets4.png" alt="" className="a"/>
+    {/* <img src="./images/planets4.png" alt="" className="a"/> */}
     <h1>Leila Boukella | Front-End Dev</h1>
     </Container>
   )
