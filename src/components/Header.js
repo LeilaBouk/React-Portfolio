@@ -106,7 +106,7 @@ const NavMenu = styled.div`
         }
 
         &:hover {
-            color: ${Palette.skyfade};
+            color: ${Palette.light};
             span:after {
                 transform: scaleX(1);
                 opacity: 1;

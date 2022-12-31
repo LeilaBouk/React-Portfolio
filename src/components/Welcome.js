@@ -5,14 +5,10 @@ import { Palette } from './Colors'
 function Welcome() {
   return (
     <Container>
-      <img src="./images/space2.png" alt="" className="h"/>
+      <img src="./images/elementsa.png" alt="" className="f"/>
       <img src="./images/space1.png" alt="" className="g"/>
-      <img src="./images/stars2.png" alt="" className="f"/>
+      <img src="./images/stars2.png" alt="" className="c"/>
       <img src="./images/stars1.png" alt="" className="e"/>
-    <img src="./images/planets1.png" alt="" className="d"/>
-    <img src="./images/planets2.png" alt="" className="c"/>
-    <img src="./images/planets3.png" alt="" className="b"/>
-    {/* <img src="./images/planets4.png" alt="" className="a"/> */}
     <h1>Leila Boukella | Front-End Dev</h1>
     </Container>
   )

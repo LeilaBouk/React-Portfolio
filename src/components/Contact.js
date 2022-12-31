@@ -68,7 +68,7 @@ const Wrapper = styled.div`
 const Container = styled.div`
   padding-top: 7vw;
   padding-bottom: 4vw;
-  background: ${Palette.water};
+  // background: ${Palette.water};
 
   h2 {
     font-size: 70px;
@@ -99,6 +99,7 @@ form {
   display: flex;
   // align-items: flex-start;
   flex-direction: column;
+  align-items: center;
   width: 40%;
   font-size: 16px;
   padding-left: 60px;
@@ -149,6 +150,6 @@ form {
     &:hover {
       transform: scale(1.05);
       border-color: rgba(249, 249, 249, 0.8);
-      background: ${Palette.dark};
+      background: ${Palette.water};
     }
   }`

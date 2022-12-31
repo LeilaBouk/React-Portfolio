@@ -27,6 +27,8 @@ function About() {
 
   return (
     <Container id="about">
+        <img src="./images/elementsb.png" alt="" className="a"/>
+        <img src="./images/stars2.png" alt="" className="b"/>
       <h2>ABOUT</h2>
       <motion.div
     ref={ref}
@@ -57,10 +59,18 @@ export default About
 
 const Container = styled.div`
 margin: auto;
+background-size:auto 100%;
+display: flex;
+position: relative;
+align-items: center;
+transform-style: preserve-3d;
+z-index: -1;
+flex-wrap: wrap;
+justify-content: center; 
 
   h2 {
     padding-top: 10vw;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     font-size: 70px;
     text-decoration: underline;
     color: white;
@@ -69,6 +79,22 @@ margin: auto;
     word-spacing: 6px;
     text-underline-offset: 20px;
  }
+
+ .a, .b {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.a {
+  transform: translateZ(-5px) scale(2);
+}
+
+.b {
+  transform: translateZ(-10px) scale(2);
+}
 
 `
 
@@ -102,7 +128,7 @@ img {
 p {
   font-size: 20px;
   background: ${Palette.dark};
-  color: ${Palette.sky};
+  color: ${Palette.light};
   padding: 20px;
   border-radius: 3px;
 }

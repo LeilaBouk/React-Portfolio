@@ -147,8 +147,6 @@ function Projects() {
 export default Projects
 
 const Container = styled.div`
-    //  background: ${Palette.sky};
-    //  background-image: url("./images/skybox.png");
      background-size: cover;
      padding: 0 calc(3.5vw + 5px);
      padding-top: 2vw;
@@ -180,15 +178,15 @@ const Content = styled.div`
 
 const Wrap = styled.div`
 
-// border-radius: 3px;
 position: relative;
-// border: 3px solid ${Palette.dark};
 box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
 rgb(0 0 0 / 73%) 0px 16px 10px -10px;
 transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 max-height:330px;
 height:auto;
 width:auto;
+border-radius: 3px;
+border: 3px solid rgba(249, 249, 249, 0.1);
 
     img {
         width: 100%;
@@ -202,8 +200,8 @@ width:auto;
     h3 {
         margin: 0;
         border-radius: 3px;
-        // border: 3px solid rgba(249, 249, 249, 0.1);
-        background: ${Palette.dark};
+        border: 3px solid rgba(249, 249, 249, 0.1);
+        background: ${Palette.darkred};
         box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
         rgb(0 0 0 / 73%) 0px 16px 10px -10px;
         padding: 10px;
@@ -264,10 +262,9 @@ width:auto;
         border-color: rgba(249, 249, 249, 0.8);
         box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
         rgb(0 0 0 / 72%) 0px 30px 22px -10px;
-        // cursor: pointer;
 
         h3 {
-            background: ${Palette.dark};
+            background: ${Palette.grey};
             color: white;
         }
 

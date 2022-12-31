@@ -27,11 +27,16 @@ export default Home
 
 const Container = styled.main`
 
+background-image: url("./images/bgtexture.png");
+// background-size:auto 100%;
+background-size: contain;
+// background-repeat: no-repeat;
+// background-attachment: fixed;
 height: 100vh;
 position: relative;
 overflow-x: hidden;
 overflow-y: auto;
-background: ${Palette.dark};
+// background: ${Palette.dark};
 perspective: 10px;
 
 &:before {
