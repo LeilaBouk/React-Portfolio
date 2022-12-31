@@ -185,7 +185,7 @@ transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 max-height:330px;
 height:auto;
 width:auto;
-border-radius: 3px;
+border-radius: 10px;
 border: 3px solid rgba(249, 249, 249, 0.1);
 
     img {
@@ -193,13 +193,13 @@ border: 3px solid rgba(249, 249, 249, 0.1);
         height: 100%;
         object-fit: cover;
         background: black;
-        border-radius: 3px;
+        border-radius: 10px;
         z-index: 1;
     }
 
     h3 {
         margin: 0;
-        border-radius: 3px;
+        border-radius: 10px;
         border: 3px solid rgba(249, 249, 249, 0.1);
         background: ${Palette.darkred};
         box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
@@ -241,7 +241,7 @@ border: 3px solid rgba(249, 249, 249, 0.1);
             margin: 10px;
             color: white;
             padding: 8px;
-            border-radius: 20px;
+            border-radius: 10px;
             border: 3px solid rgba(249, 249, 249, 0.1);
             background: ${Palette.water};
             font-size: 20px;
