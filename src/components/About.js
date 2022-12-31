@@ -6,8 +6,8 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const variant = {
-  visible: { scale: 1, x:0,  transition: { duration: 0.6 } },
-  hidden: { scale: 0.9, x:-500 },
+  visible: { x:0,  transition: { duration: 0.6 } },
+  hidden: { x:-500 },
 }
 
 function About() {
