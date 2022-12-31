@@ -130,7 +130,7 @@ function Projects() {
             <h4>View Repository</h4>
             </a>
             <h5>
-                Handlebars / SCSS / JavaScript
+                HTML / SCSS / JavaScript
             </h5>
             </div>
             <a href="https://leilabouk.github.io/SBGameDemo/" target="blank">

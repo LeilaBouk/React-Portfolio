@@ -74,25 +74,35 @@ margin: auto;
 
 const Wrap = styled.div`
 
-background: ${Palette.skyfade};
-background-image: url("./images/roses.png");
+background-image: url("./images/glass.png");
+border: solid 2px white;
+border-radius: 20px;
 background-size: cover;
 display: flex;
-padding: 80px;
+padding: 50px;
 margin: 50px;
+
+@media screen and (max-width: 900px) {
+  flex-direction: column;
+  align-items: center;
+}
 
 img {
   width: 30%;
   height: 30%;
-  margin: 10px 0px 10px 100px;
+  padding: 20px;
   border-radius: 3px;
+
+  @media screen and (max-width: 900px) {
+    width: 50%;
+    height: 50%;
+  }
 }
 
 p {
-  margin: 10px 100px 10px 100px;
   font-size: 20px;
-  background: white;
-  color: #273748;
+  background: ${Palette.dark};
+  color: ${Palette.sky};
   padding: 20px;
   border-radius: 3px;
 }

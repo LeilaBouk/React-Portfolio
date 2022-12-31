@@ -71,14 +71,15 @@ const Container = styled.div`
   background: ${Palette.water};
 
   h2 {
-    font-size: 40px;
+    font-size: 70px;
     text-decoration: underline;
     color: white;
     font-weight: bold;
     letter-spacing: 1px;
-    word-spacing: 4px;
-    text-underline-offset: 8px;
+    word-spacing: 6px;
+    text-underline-offset: 20px;
     margin-bottom: 10vh;
+    
  }
     
 `
