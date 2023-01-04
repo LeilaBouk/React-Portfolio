@@ -27,16 +27,16 @@ function About() {
 
   return (
     <Container id="about">
-        <img src="./images/elementsb.png" alt="" className="a"/>
-        <img src="./images/stars2.png" alt="" className="b"/>
+        <img src="./images/elementsb.png" alt="UFO Taurus Comet" className="a"/>
+        <img src="./images/stars2.png" alt="stars" className="b"/>
       <h2>ABOUT</h2>
       <motion.div
     ref={ref}
      variants={variant}
      initial="hidden"
      animate={control}>
-         <Wrap>
-        <img src="./images/pfp.gif" alt=""/>
+         <Wrap className= "about">
+        <img src="./images/pfp.gif" alt="animated robot"/>
         <p>
         Hi! I'm Leila, a front-end developer and artist based in Arizona.
         <br></br>
@@ -47,7 +47,13 @@ function About() {
         I went to college in New York at the School of Visual Arts.
         <br></br>
         <br></br>
-        HTML | CSS | JS | React
+        <button>Resume</button>
+        </p>
+        </Wrap>
+        <Wrap className= "skills">
+        <h3>Skills</h3>
+        <p>
+        HTML / CSS / JS / React / SCSS / jQuery / Bootstrap / Handlebars / Git / Styled Components / Photoshop / Adobe Animate / Adobe Illustrator / Google Workshop
         </p>
         </Wrap>
         </motion.div>
@@ -68,6 +74,7 @@ z-index: -1;
 flex-wrap: wrap;
 justify-content: center; 
 
+// Titles
   h2 {
     padding-top: 10vw;
     margin-bottom: 20px;
@@ -80,6 +87,18 @@ justify-content: center;
     text-underline-offset: 20px;
  }
 
+ h3 {
+  margin: 20px;
+  font-size: 40px;
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+  text-underline-offset: 10px;
+ }
+
+//  Parallax Background Elements
  .a, .b {
   position: absolute;
   height: 100%;
@@ -96,10 +115,39 @@ justify-content: center;
   transform: translateZ(-10px) scale(2);
 }
 
+// About Section
+.about {
+  p {
+    font-size: 20px;
+    background: ${Palette.dark};
+    color: ${Palette.light};
+    padding: 20px;
+    border-radius: 3px;
+  }
+}
+
+// Skills Section
+.skills {
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    font-size: 26px;
+    background: ${Palette.dark};
+    color: ${Palette.light};
+    padding: 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    word-spacing: 6px;
+    line-height: 200%;
+  }
+}
+
 `
 
 const Wrap = styled.div`
 
+// Cards
 background-image: url("./images/glass.png");
 border: solid 2px white;
 border-radius: 20px;
@@ -113,11 +161,29 @@ margin: 50px;
   align-items: center;
 }
 
+button {
+  margin: 10px;
+  color: ${Palette.light};
+  padding: 8px;
+  border-radius: 10px;
+  border: 3px solid rgba(249, 249, 249, 0.1);
+  background: ${Palette.dark};
+  font-size: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+  &:hover {
+    color: white;
+    background: ${Palette.water};
+  }
+}
+
 img {
   width: 30%;
   height: 30%;
   padding: 20px;
-  border-radius: 3px;
+  border-radius: 10%;
 
   @media screen and (max-width: 900px) {
     width: 50%;
@@ -125,11 +191,5 @@ img {
   }
 }
 
-p {
-  font-size: 20px;
-  background: ${Palette.dark};
-  color: ${Palette.light};
-  padding: 20px;
-  border-radius: 3px;
-}
+
 `

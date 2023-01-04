@@ -58,7 +58,6 @@ const NavMenu = styled.div`
     display: flex;
     flex: 1;
     justify-content: space-around;
-    margin-left: 25px;
     align-items: center;
 
     a:visited { 
@@ -80,12 +79,19 @@ const NavMenu = styled.div`
         }
 
         span {
-            font-size: 13px;
             letter-spacing: 1.50px;
             position: relative;
             font-size: 25px;
             font-weight: bold;
             transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+            @media only screen and (max-width: 800px) {
+                font-size: 18px;
+            }
+
+            @media only screen and (max-width: 600px) {
+                font-size: 15px;
+            }
 
             &:after {
                 content: "";

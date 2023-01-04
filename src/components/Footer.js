@@ -12,6 +12,9 @@ function Footer() {
    <a href="https://github.com/LeilaBouk" target="blank">
    <img src="./images/github.png" alt=""/>
    </a>
+   <a href="https://www.instagram.com/lariatel/" target="blank">
+   <img src="./images/insta.png" alt=""/>
+   </a>
    {/* <img src="./images/insta.png" alt=""/> */}
 </Container>
   )
@@ -24,12 +27,13 @@ const Container = styled.div`
   padding: 50px;
 
   img {
-    max-width: 70px;
+    max-width: 60px;
     padding: 20px;
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+    filter: brightness(0.8);
 
     &:hover {
-      filter: brightness(1.7);
+      filter: brightness(1.4);
     }
   }
 
