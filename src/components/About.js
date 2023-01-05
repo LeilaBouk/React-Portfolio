@@ -46,7 +46,7 @@ function About() {
         all my skills together through front-end work.
         <br></br>
         <br></br>
-        I went to college in New York at the School of Visual Arts.
+        I'm detail oriented, a fast learner, adaptable, creative, and always working to improve my skills.
         <br></br>
         <br></br>
         <button>Resume</button>
