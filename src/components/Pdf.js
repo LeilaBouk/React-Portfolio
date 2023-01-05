@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Palette } from './Colors'
 
-function Resume() {
+function Pdf() {
   return (
     <Container>
       <iframe src="./pdfs/test.pdf" title="resume" frameborder="0"></iframe>
@@ -10,7 +10,7 @@ function Resume() {
   )
 }
 
-export default Resume
+export default Pdf
 
 const Container = styled.div`
     background: ${Palette.dark};

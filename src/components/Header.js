@@ -25,10 +25,10 @@ function Header() {
             <span>CONTACT</span>
         </Link>
 
-        <a>
+        <Link to="/resume" target="blank">
             {/* <img src='./images/resume-icon.png' alt='resume'/> */}
             <span>RESUME</span>
-        </a>
+        </Link>
 
 
         <a href="https://lariatel.com/work" target="blank">

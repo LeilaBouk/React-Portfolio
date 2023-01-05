@@ -4,6 +4,7 @@ import { Palette } from './Colors'
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import { HashLink as Link } from 'react-router-hash-link';
 
 const variant = {
   visible: { x:0,  transition: { duration: 0.6 } },
@@ -49,13 +50,15 @@ function About() {
         I'm detail oriented, a fast learner, adaptable, creative, and always working to improve my skills.
         <br></br>
         <br></br>
+        <Link to="/resume" target="blank">
         <button>Resume</button>
+        </Link>
         </p>
         </Wrap>
         <Wrap className= "skills">
         <h3>Skills</h3>
         <p>
-        HTML / CSS / JS / React / SCSS / jQuery / Bootstrap / Handlebars / Git / Styled Components / Photoshop / Adobe Animate / Adobe Illustrator / Google Workspace
+        HTML / CSS / JS / React / Sass / jQuery / Bootstrap / Handlebars / Git / Styled Components / Photoshop / Adobe Animate / Adobe Illustrator / Google Workspace
         </p>
         </Wrap>
         </motion.div>
