@@ -4,6 +4,6 @@ export const Palette = {
     white: "#FFFFFF",
     red: "#a52063",
     darkred: "#41162e",
-    water: "#4c7eb9",
+    water: "#458b80",
     grey: "#42524c"
   };
