@@ -38,10 +38,12 @@ function About() {
          <Wrap className= "about">
         <img src="./images/pfp.gif" alt="animated robot"/>
         <p>
-        Hi! I'm Leila, a front-end developer and artist based in Arizona.
+        <h4>Hi! I'm Leila,</h4> Front-end developer and artist based in Arizona.
         <br></br>
         <br></br>
-        I grew up in the United Arab Emirates before moving to the United States.
+        I have a background in illustration that gives me a keen eye for color and design. 
+        Wanting to expand my skillset I took a bootcamp and learned to code. I'm excited to bring
+        all my skills together through front-end work.
         <br></br>
         <br></br>
         I went to college in New York at the School of Visual Arts.
@@ -96,6 +98,14 @@ justify-content: center;
   letter-spacing: 1px;
   word-spacing: 6px;
   text-underline-offset: 10px;
+ }
+
+ h4 {
+  color: white;
+  font-size: 30px;
+  text-align: start;
+  padding-left: 20px;
+  letter-spacing: 2px;
  }
 
 //  Parallax Background Elements
