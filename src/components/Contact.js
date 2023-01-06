@@ -20,7 +20,9 @@ function Contact() {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
-      });
+      }).then (
+        message => alert("Message sent! Thank you")
+      );
       e.target.reset()
   };
 
@@ -61,8 +63,13 @@ const Wrapper = styled.div`
     width: 500px;
     padding-left: 180px;
 
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+
     canvas {
         z-index: -1;
+
     }
 `
 
@@ -92,19 +99,19 @@ flex-direction: row;
 align-items: center;
 font-family: ${Fonts.secondary};
 
-img {
-  width: 40%;
-  padding-left: 60px;
-}
-
 form {
   display: flex;
-  // align-items: flex-start;
   flex-direction: column;
   align-items: center;
   width: 40%;
   font-size: 16px;
   padding-left: 60px;
+
+  @media screen and (max-width: 1000px) {
+    width: 100%;
+    padding: 0;
+    margin: 0 80px 0 80px;
+  }
 
   input {
     width: 100%;
