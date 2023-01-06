@@ -40,12 +40,13 @@ function About() {
          <Wrap className= "about">
         <img src="./images/pfp.gif" alt="animated robot"/>
         <p>
-        <h4>Hi! I'm Leila,</h4> Front-end developer and artist based in Arizona.
+        <h4>Hi! I'm Leila,</h4> 
+        A front-end developer with a background in illustration, giving me a keen eye for color and design. 
+        Wanting to expand my skillset I took a bootcamp and learned to code. This has enabled me to bring
+        all my skills together to create beautiful front-end work.
         <br></br>
         <br></br>
-        I have a background in illustration that gives me a keen eye for color and design. 
-        Wanting to expand my skillset I took a bootcamp and learned to code. I'm excited to bring
-        all my skills together through front-end work.
+        I've lived in several places during my life, The United Arab Emirates, NYC, and Arizona. I have a strong love for travel and learning the history behind the places I visit. I spend much of my free time cooking, coding, animating, and drawing.
         <br></br>
         <br></br>
         I'm detail oriented, a fast learner, adaptable, creative, and always working to improve my skills.
@@ -57,7 +58,7 @@ function About() {
         </p>
         </Wrap>
         <Wrap className= "skills">
-        <h3>Skills</h3>
+        <h3>Skill Highlights</h3>
         <p>
         HTML / CSS / JS / React / Sass / jQuery / Bootstrap / Handlebars / Git / Styled Components / Photoshop / Adobe Animate / Adobe Illustrator / Google Workspace
         </p>
@@ -134,6 +135,7 @@ justify-content: center;
 .about {
   p {
     font-size: 20px;
+    line-height: 120%;
     background: ${Palette.dark};
     color: ${Palette.light};
     padding: 20px;

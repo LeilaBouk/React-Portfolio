@@ -87,7 +87,7 @@ function Projects() {
             </h5>
             </div>
             <a href="https://leilabouk.github.io/M4-CodeQuiz/" target="blank">
-            <h3>Quiz Game</h3>
+            <h3>Coding Quiz</h3>
             </a>
         </Wrap>
         <Wrap>

@@ -15,7 +15,7 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -36,7 +36,6 @@ function Contact() {
       <textarea name="message" />
       <input type="submit" value="Send" />
     </form>
-    {/* <img src="./images/pfp.gif" alt=""/> */}
     <Wrapper>
     <Canvas>
             <OrbitControls enableZoom={false}/>

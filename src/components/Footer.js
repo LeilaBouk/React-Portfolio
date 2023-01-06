@@ -43,7 +43,7 @@ const Container = styled.div`
   }
 
   h4 {
-    font-size: 10px;
+    font-size: 13px;
     text-decoration: underline;
     color: ${Palette.grey};
     font-weight: bold;
