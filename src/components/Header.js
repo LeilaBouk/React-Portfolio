@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Fonts } from './Fonts';
 import { Palette } from './Colors'
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -51,6 +52,7 @@ display: flex;
 align-items: center;
 padding: 0 36px;
 overflow-x: hidden;
+font-family: ${Fonts.secondary};
 
 `
 

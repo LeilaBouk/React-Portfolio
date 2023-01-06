@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Palette } from './Colors'
+import { Fonts } from './Fonts'
 
 function Welcome() {
   return (
@@ -70,6 +71,8 @@ img {
 
 h1 {
   color: white;
+  font-family: ${Fonts.main};
+  font-size: 40px;
 }
 
 `

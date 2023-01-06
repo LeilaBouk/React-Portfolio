@@ -1,11 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Palette } from './Colors'
+import { Fonts } from './Fonts'
 
 function Footer() {
   return (
     <Container>
-    {/* <h2>FOOTER</h2> */}
+    <h4>Email + Social Media</h4>
+    <a href="mailto:leila.boukella@gmail.com">
+   <img src="./images/mail.png" alt=""/>
+   </a>
     <a href="https://www.linkedin.com/in/leila-boukella-7b2742226/" target="blank">
    <img src="./images/linkedin.png" alt=""/>
    </a>
@@ -25,6 +29,7 @@ export default Footer
 const Container = styled.div`
   background: ${Palette.dark};
   padding: 50px;
+  font-family: ${Fonts.main};
 
   img {
     max-width: 60px;
@@ -37,13 +42,14 @@ const Container = styled.div`
     }
   }
 
-  h2 {
-    font-size: 40px;
+  h4 {
+    font-size: 10px;
     text-decoration: underline;
-    color: white;
+    color: ${Palette.grey};
     font-weight: bold;
     letter-spacing: 1px;
     word-spacing: 4px;
     text-underline-offset: 8px;
+    cursor: default;
  }
 `

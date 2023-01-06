@@ -1,6 +1,7 @@
 import React, { useRef, Suspense } from 'react';
 import emailjs from '@emailjs/browser';
 import styled from 'styled-components'
+import { Fonts } from './Fonts'
 
 import Sphere from './AnimatedSphere';
 import { Canvas } from '@react-three/fiber';
@@ -68,7 +69,6 @@ const Wrapper = styled.div`
 const Container = styled.div`
   padding-top: 7vw;
   padding-bottom: 4vw;
-  // background: ${Palette.water};
 
   h2 {
     font-size: 70px;
@@ -79,6 +79,7 @@ const Container = styled.div`
     word-spacing: 6px;
     text-underline-offset: 20px;
     margin-bottom: 10vh;
+    font-family: ${Fonts.main};
     
  }
     
@@ -89,6 +90,7 @@ const ContactForm = styled.div`
 display: flex;
 flex-direction: row;
 align-items: center;
+font-family: ${Fonts.secondary};
 
 img {
   width: 40%;
@@ -106,19 +108,22 @@ form {
 
   input {
     width: 100%;
+    background: ${Palette.light};
+
     min-height: 35px;
     padding: 7px;
     outline: none;
     border-radius: 5px;
     border: 1px solid rgb(123, 145, 171);
     &:focus {
-      border: 2px solid rgb(144, 57, 57);
+      border: 2px solid ${Palette.water};
     }
   }
   
   textarea {
     max-width: 100%;
     min-width: 100%;
+    background: ${Palette.light};
     width: 100%;
     max-height: 100px;
     min-height: 100px;
@@ -127,29 +132,33 @@ form {
     border-radius: 5px;
     border: 1px solid rgb(123, 145, 171);
     &:focus {
-      border: 2px solid rgb(144, 57, 57);
+      border: 2px solid ${Palette.water};
     }
   }
   label {
     margin-top: 1rem;
     margin-bottom: 1rem;
     font-weight: bold;
-    color: white;
+    color: ${Palette.white};
   }
   input[type="submit"] {
+    font-family: ${Fonts.main};
     padding: 20px;
     margin-top: 2rem;
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: bold;
-    background: ${Palette.red};
-    color: white;
+    background: ${Palette.water};
+    color: ${Palette.grey};
     border: none;
     transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
     &:hover {
       transform: scale(1.05);
       border-color: rgba(249, 249, 249, 0.8);
-      background: ${Palette.water};
+      background: ${Palette.red};
+      color: ${Palette.white};
     }
   }`
+
+  

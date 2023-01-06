@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Palette } from './Colors'
+import { Fonts } from './Fonts'
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -90,6 +91,7 @@ justify-content: center;
     letter-spacing: 1px;
     word-spacing: 6px;
     text-underline-offset: 20px;
+    font-family: ${Fonts.main};
  }
 
  h3 {
@@ -168,6 +170,7 @@ background-size: cover;
 display: flex;
 padding: 50px;
 margin: 50px;
+font-family: ${Fonts.secondary};
 
 @media screen and (max-width: 900px) {
   flex-direction: column;
@@ -176,6 +179,7 @@ margin: 50px;
 
 button {
   margin: 10px;
+  font-family: ${Fonts.secondary};
   color: ${Palette.light};
   padding: 8px;
   border-radius: 10px;

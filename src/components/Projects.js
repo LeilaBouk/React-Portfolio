@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Palette } from './Colors'
+import { Fonts } from './Fonts'
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
@@ -159,11 +160,13 @@ const Container = styled.div`
         letter-spacing: 1px;
         word-spacing: 4px;
         text-underline-offset: 20px;
+        font-family: ${Fonts.main};
      }
 `
 
 const Content = styled.div`
     display: grid;
+    font-family: ${Fonts.secondary};
     grid-gap: 120px 40px;
     grid-template-columns: repeat(3, minmax(0,1fr));
 
