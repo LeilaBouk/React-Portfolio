@@ -46,7 +46,7 @@ function About() {
         all my skills together to create beautiful front-end work.
         <br></br>
         <br></br>
-        I've lived in several places during my life, The United Arab Emirates, NYC, and Arizona. I have a strong love for travel and learning the history behind the places I visit. I spend much of my free time cooking, coding, animating, and drawing.
+        I've lived in several places during my life, The United Arab Emirates, NYC, and Arizona. I have a strong love for travel and learning the history behind the places I visit. I spend much of my free time cooking, coding, <a href="https://lariatel.com/work" target="blank">animating, and drawing</a>.
         <br></br>
         <br></br>
         I'm detail oriented, a fast learner, adaptable, creative, and always working to improve my skills.
@@ -134,12 +134,20 @@ justify-content: center;
 // About Section
 .about {
   p {
-    font-size: 20px;
-    line-height: 120%;
     background: ${Palette.dark};
-    color: ${Palette.light};
     padding: 20px;
     border-radius: 3px;
+  }
+
+  a, p {
+    color: ${Palette.light};
+    font-size: 20px;
+    line-height: 120%;
+    transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  }
+
+  a:hover{
+    color: ${Palette.red};
   }
 }
 
