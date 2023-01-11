@@ -5,7 +5,7 @@ import { Palette } from './Colors'
 function Resume() {
   return (
     <Container>
-      <iframe src="./pdfs/test.pdf" title="resume" frameborder="0"></iframe>
+      <iframe src="./pdfs/leilaboukella_resume.pdf" title="resume" frameborder="0"></iframe>
     </Container>
   )
 }
