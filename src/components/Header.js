@@ -32,7 +32,7 @@ function Header() {
         </Link>
 
 
-        <a href="https://lariatel.com/work" target="blank">
+        <a href="https://leilaboukella.com/" target="blank">
             {/* <img src='./images/resume-icon.png' alt='resume'/> */}
             <span>ART</span>
         </a>
