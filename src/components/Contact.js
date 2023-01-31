@@ -58,7 +58,6 @@ export default Contact
 
 const Wrapper = styled.div`
     position: relative;
-    // background: #332340;
     height: 500px;
     width: 500px;
     padding-left: 180px;

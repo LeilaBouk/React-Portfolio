@@ -95,6 +95,10 @@ const NavMenu = styled.div`
                 font-size: 15px;
             }
 
+            @media only screen and (max-width: 480px) {
+                font-size: 9px;
+            }
+
             &:after {
                 content: "";
                 height: 3px;
