@@ -7,10 +7,16 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 
-const variant = {
+// Prevent animations in mobile view
+let variant = {}
+const mobileView = window.innerWidth < 768;
+
+if (!mobileView) { 
+   variant = {
   visible: { x:0,  transition: { duration: 0.6 } },
   hidden: { x:-500 },
 }
+};
 
 function About() {
 
