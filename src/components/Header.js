@@ -1,41 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Fonts } from './Fonts';
 import { Palette } from './Colors'
 import { HashLink as Link } from 'react-router-hash-link';
+import Dropdown from './Dropdown';
 
 function Header() {
+
+    const [click, setClick] = useState(false)
+
+    const handleClick = () => setClick(!click)
+
   return (
     <Nav>
 
-{/* <Icon src="https://c.tenor.com/TYWdCAZu258AAAAC/guardians-of-the-galaxy-rocket-raccoon.gif"/> */}
-
         <NavMenu>
         <Link to="#projects">
-            {/* <img src='./images/project-icon.png' alt='projects'/> */}
             <span>PROJECTS</span>
         </Link>
 
         <Link to="#about">
-            {/* <img src='./images/about-icon.png' alt='about'/> */}
             <span>ABOUT</span>
         </Link>
 
         <Link to="#contact">
-            {/* <img src='./images/contact-icon.png alt='contact'/> */}
             <span>CONTACT</span>
         </Link>
 
         <Link to="/resume" target="blank">
-            {/* <img src='./images/resume-icon.png' alt='resume'/> */}
             <span>RESUME</span>
         </Link>
 
 
         <a href="https://leilaboukella.com/" target="blank">
-            {/* <img src='./images/resume-icon.png' alt='resume'/> */}
             <span>ART</span>
         </a>
+
+        <Folder onClick={handleClick}>
+            <i />
+        </Folder>
 
         </NavMenu>
 
@@ -128,9 +131,6 @@ const NavMenu = styled.div`
     }
 `
 
-const Icon = styled.img`
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    cursor: pointer;
+const Folder = styled.div`
+    color: white;
 `

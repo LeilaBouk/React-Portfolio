@@ -66,7 +66,7 @@ function About() {
         <Wrap className= "skills">
         <h3>Skill Highlights</h3>
         <p>
-        HTML / CSS / JS / React / Sass / jQuery / Bootstrap / Handlebars / Git / Styled Components / Photoshop / Adobe Animate / Adobe Illustrator / Google Workspace
+        HTML / CSS / JS / React / Sass / jQuery / Bootstrap / Handlebars / Git / Styled Components / Font Awesome / Photoshop / Adobe Animate / Adobe Illustrator / Google Workspace
         </p>
         </Wrap>
         </motion.div>
