@@ -4,6 +4,8 @@ import { Fonts } from './Fonts';
 import { Palette } from './Colors'
 import { HashLink as Link } from 'react-router-hash-link';
 import Dropdown from './Dropdown';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
 
@@ -37,7 +39,7 @@ function Header() {
         </a>
 
         <Folder onClick={handleClick}>
-            <i />
+            <FontAwesomeIcon icon={click ? faBars : faXmark} />
         </Folder>
 
         </NavMenu>
@@ -133,4 +135,5 @@ const NavMenu = styled.div`
 
 const Folder = styled.div`
     color: white;
+    font-size: 25px;
 `
