@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Fonts } from './Fonts';
 import { Palette } from './Colors'
 import { HashLink as Link } from 'react-router-hash-link';
+// WIP individual project pages
 import Dropdown from './Dropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -12,37 +13,39 @@ function Header() {
     const [click, setClick] = useState(false)
 
     const handleClick = () => setClick(!click)
+    const closeMobileMenu = () => setClick(false)
+    
 
   return (
     <Nav>
 
         <NavMenu>
-        <Link to="#projects">
+        <Link to="#projects" onClick={closeMobileMenu}>
             <span>PROJECTS</span>
         </Link>
 
-        <Link to="#about">
+        <Link to="#about" onClick={closeMobileMenu}>
             <span>ABOUT</span>
         </Link>
 
-        <Link to="#contact">
+        <Link to="#contact" onClick={closeMobileMenu}>
             <span>CONTACT</span>
         </Link>
 
-        <Link to="/resume" target="blank">
+        <Link to="/resume" target="blank" onClick={closeMobileMenu}>
             <span>RESUME</span>
         </Link>
 
 
-        <a href="https://leilaboukella.com/" target="blank">
+        <a href="https://leilaboukella.com/" target="blank" onClick={closeMobileMenu}>
             <span>ART</span>
         </a>
 
-        <Folder onClick={handleClick}>
-            <FontAwesomeIcon icon={click ? faBars : faXmark} />
-        </Folder>
-
         </NavMenu>
+
+        <Folder onClick={handleClick}>
+            <FontAwesomeIcon icon={click ? faXmark : faBars} />
+        </Folder>
 
     </Nav>
   )
@@ -92,16 +95,12 @@ const NavMenu = styled.div`
             font-weight: bold;
             transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
 
-            @media only screen and (max-width: 800px) {
+            @media only screen and (max-width: 768px) {
                 font-size: 18px;
             }
 
-            @media only screen and (max-width: 600px) {
-                font-size: 15px;
-            }
-
-            @media only screen and (max-width: 480px) {
-                font-size: 9px;
+            @media only screen and (max-width: 550px) {
+                display: none;
             }
 
             &:after {
@@ -136,4 +135,10 @@ const NavMenu = styled.div`
 const Folder = styled.div`
     color: white;
     font-size: 25px;
+    cursor: pointer;
+
+
+    @media only screen and (min-width: 550px) {
+        display: none;
+    }
 `
