@@ -107,7 +107,7 @@ function Projects() {
             <h3>Password Generator</h3>
             </a>
         </Wrap>
-        {/* <Wrap>
+        <Wrap>
             <img src="./images/demo.png" alt=""/>
             <a href="https://github.com/LeilaBouk/M14-TechBlog" target="blank">
             <div>
@@ -119,8 +119,8 @@ function Projects() {
             </div>
             <h3>Bistro Board</h3>
             </a>
-        </Wrap> */}
-        {/* <Wrap>
+        </Wrap>
+        <Wrap>
 
             <img src="./images/springbot.png" alt=""/>
             <div>
@@ -137,7 +137,7 @@ function Projects() {
             <a href="https://leilabouk.github.io/SBGameDemo/" target="blank">
             <h3>Springbot</h3>
             </a>
-        </Wrap> */}
+        </Wrap>
     </Content>
     </motion.div>
 </Container>

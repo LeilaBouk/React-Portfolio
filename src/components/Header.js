@@ -3,8 +3,6 @@ import styled from 'styled-components'
 import { Fonts } from './Fonts';
 import { Palette } from './Colors'
 import { HashLink as Link } from 'react-router-hash-link';
-// WIP individual project pages
-import Dropdown from './Dropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
@@ -62,13 +60,25 @@ padding: 0 36px;
 overflow-x: hidden;
 font-family: ${Fonts.secondary};
 
+@media only screen and (max-width: 550px) {
+                overflow-x: visible;
+            }
+
 `
 
 const NavMenu = styled.div`
+
     display: flex;
     flex: 1;
     justify-content: space-around;
     align-items: center;
+
+    @media only screen and (max-width: 550px) {
+                flex-direction: column;
+                margin-top: 30vh;
+                background: ${Palette.dark};
+                border-radius: 20px;
+            }
 
     a:visited { 
         text-decoration: none;
@@ -99,9 +109,11 @@ const NavMenu = styled.div`
                 font-size: 18px;
             }
 
+            /* Mobile Menu */
             @media only screen and (max-width: 550px) {
-                display: none;
-            }
+                padding: 15px;
+                /* display: none; */
+                 }
 
             &:after {
                 content: "";
