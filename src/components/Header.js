@@ -11,32 +11,30 @@ function Header() {
     const [click, setClick] = useState(false)
 
     const handleClick = () => setClick(!click)
-    const closeMobileMenu = () => setClick(false)
-    
 
   return (
     <Nav>
-
+        {/* style={{display: "none"}} */}
         <NavMenu>
-        <Link to="#projects" onClick={closeMobileMenu}>
-            <span>PROJECTS</span>
+        <Link to="#projects" onClick={handleClick}>
+            <span style={click ? {display: ""} : {display: "none"}}>PROJECTS</span>
         </Link>
 
-        <Link to="#about" onClick={closeMobileMenu}>
-            <span>ABOUT</span>
+        <Link to="#about" onClick={handleClick}>
+            <span style={click ? {display: ""} : {display: "none"}}>ABOUT</span>
         </Link>
 
-        <Link to="#contact" onClick={closeMobileMenu}>
-            <span>CONTACT</span>
+        <Link to="#contact" onClick={handleClick}>
+            <span style={click ? {display: ""} : {display: "none"}}>CONTACT</span>
         </Link>
 
-        <Link to="/resume" target="blank" onClick={closeMobileMenu}>
-            <span>RESUME</span>
+        <Link to="/resume" target="blank" onClick={handleClick}>
+            <span style={click ? {display: ""} : {display: "none"}}>RESUME</span>
         </Link>
 
 
-        <a href="https://leilaboukella.com/" target="blank" onClick={closeMobileMenu}>
-            <span>ART</span>
+        <a href="https://leilaboukella.com/" target="blank" onClick={handleClick}>
+            <span style={click ? {display: ""} : {display: "none"}}>ART</span>
         </a>
 
         </NavMenu>
@@ -112,7 +110,6 @@ const NavMenu = styled.div`
             /* Mobile Menu */
             @media only screen and (max-width: 550px) {
                 padding: 15px;
-                /* display: none; */
                  }
 
             &:after {
@@ -148,7 +145,7 @@ const Folder = styled.div`
     color: white;
     font-size: 25px;
     cursor: pointer;
-
+    user-select: none;
 
     @media only screen and (min-width: 550px) {
         display: none;
