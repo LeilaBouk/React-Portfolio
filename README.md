@@ -2,7 +2,7 @@
 
 ## Website screenshot 📸
 
-![Portfolio website screenshot](./public/images/SiteScreenshot.png)
+![Portfolio website screenshot](./public/images/WebScreenshot.png)
 
 ## Deployed website link 🤖
 
