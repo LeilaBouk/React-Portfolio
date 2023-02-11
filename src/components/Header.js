@@ -17,30 +17,30 @@ function Header() {
         {/* style={{display: "none"}} */}
         <NavMenu>
         <Link to="#projects" onClick={handleClick}>
-            <span style={click ? {display: ""} : {display: "none"}}>PROJECTS</span>
+            <span style={click ? {display: "none"} : {display: ""}}>PROJECTS</span>
         </Link>
 
         <Link to="#about" onClick={handleClick}>
-            <span style={click ? {display: ""} : {display: "none"}}>ABOUT</span>
+            <span style={click ? {display: "none"} : {display: ""}}>ABOUT</span>
         </Link>
 
         <Link to="#contact" onClick={handleClick}>
-            <span style={click ? {display: ""} : {display: "none"}}>CONTACT</span>
+            <span style={click ? {display: "none"} : {display: ""}}>CONTACT</span>
         </Link>
 
         <Link to="/resume" target="blank" onClick={handleClick}>
-            <span style={click ? {display: ""} : {display: "none"}}>RESUME</span>
+            <span style={click ? {display: "none"} : {display: ""}}>RESUME</span>
         </Link>
 
 
         <a href="https://leilaboukella.com/" target="blank" onClick={handleClick}>
-            <span style={click ? {display: ""} : {display: "none"}}>ART</span>
+            <span style={click ? {display: "none"} : {display: ""}}>ART</span>
         </a>
 
         </NavMenu>
 
         <Folder onClick={handleClick}>
-            <FontAwesomeIcon icon={click ? faXmark : faBars} />
+            <FontAwesomeIcon icon={click ? faBars : faXmark} />
         </Folder>
 
     </Nav>
