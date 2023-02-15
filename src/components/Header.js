@@ -9,12 +9,10 @@ import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 function Header() {
 
     const [click, setClick] = useState(false)
-
     const handleClick = () => setClick(!click)
 
   return (
     <Nav>
-        {/* style={{display: "none"}} */}
         <NavMenu>
         <Link to="#projects" onClick={handleClick}>
             <span style={click ? {display: "none"} : {display: ""}}>PROJECTS</span>
@@ -147,7 +145,7 @@ const Folder = styled.div`
     cursor: pointer;
     user-select: none;
 
-    @media only screen and (min-width: 550px) {
+    /* @media only screen and (min-width: 550px) {
         display: none;
-    }
+    } */
 `

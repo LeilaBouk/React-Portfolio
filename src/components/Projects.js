@@ -107,7 +107,7 @@ function Projects() {
             <h3>Password Generator</h3>
             </a>
         </Wrap>
-        <Wrap>
+        {/* <Wrap>
             <img src="./images/demo.png" alt=""/>
             <a href="https://github.com/LeilaBouk/M14-TechBlog" target="blank">
             <div>
@@ -119,7 +119,7 @@ function Projects() {
             </div>
             <h3>Bistro Board</h3>
             </a>
-        </Wrap>
+        </Wrap> */}
         <Wrap>
 
             <img src="./images/springbot.png" alt=""/>
