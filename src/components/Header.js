@@ -26,9 +26,9 @@ function Header() {
             <span style={click ? {display: "none"} : {display: ""}}>CONTACT</span>
         </Link>
 
-        <Link to="/resume" target="blank" onClick={handleClick}>
+        {/* <Link to="/resume" target="blank" onClick={handleClick}>
             <span style={click ? {display: "none"} : {display: ""}}>RESUME</span>
-        </Link>
+        </Link> */}
 
 
         <a href="https://leilaboukella.com/" target="blank" onClick={handleClick}>
